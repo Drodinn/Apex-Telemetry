@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="70 50 372 320" width="100%" height="100%">
+  <defs>
+    <!-- Hull Metallic Gradient -->
+    <linearGradient id="hullDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B3545" />
+      <stop offset="50%" stop-color="#1F2633" />
+      <stop offset="100%" stop-color="#121722" />
+    </linearGradient>
+
+    <!-- Hull Light Highlights -->
+    <linearGradient id="hullLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4A5A70" />
+      <stop offset="100%" stop-color="#242E3D" />
+    </linearGradient>
+
+    <!-- Apex Orange Accent Gradient -->
+    <linearGradient id="apexOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB300" />
+      <stop offset="50%" stop-color="#FF7700" />
+      <stop offset="100%" stop-color="#D64500" />
+    </linearGradient>
+
+    <!-- Cyan Energy/Canopy Glow -->
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00FFFF" />
+      <stop offset="100%" stop-color="#0088CC" />
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- MAIN SHIP GROUP -->
+  <g id="ViperMk3" transform="rotate(180, 256, 256)">
+    <!-- Left Wing Outer -->
+    <path d="M 256 60 L 150 290 L 80 340 L 170 365 L 210 330 L 256 350 Z" fill="url(#hullDark)" stroke="#101622" stroke-width="2" />
+    <!-- Right Wing Outer -->
+    <path d="M 256 60 L 362 290 L 432 340 L 342 365 L 302 330 L 256 350 Z" fill="url(#hullDark)" stroke="#101622" stroke-width="2" />
+
+    <!-- Apex Signature Orange Racing Stripes -->
+    <polygon points="256,70 242,100 135,325 105,335 175,285" fill="url(#apexOrange)" />
+    <polygon points="256,70 270,100 377,325 407,335 337,285" fill="url(#apexOrange)" />
+    <polygon points="210,210 302,210 312,232 200,232" fill="url(#apexOrange)" />
+
+    <!-- Upper Hull Sections -->
+    <polygon points="256,60 232,150 256,180 280,150" fill="url(#hullLight)" stroke="#1A2332" stroke-width="1.5" />
+    <polygon points="232,150 200,240 256,330 312,240 280,150" fill="url(#hullDark)" stroke="#2B384E" stroke-width="1" />
+
+    <!-- Viper Side Intakes -->
+    <path d="M 160 240 L 180 180 L 210 230 L 195 350 L 175 360 Z" fill="url(#hullLight)" stroke="#101622" stroke-width="1.5" />
+    <polygon points="175,190 185,185 195,225 185,230" fill="#0A0E14" />
+    <path d="M 352 240 L 332 180 L 302 230 L 317 350 L 337 360 Z" fill="url(#hullLight)" stroke="#101622" stroke-width="1.5" />
+    <polygon points="337,190 327,185 317,225 327,230" fill="#0A0E14" />
+
+    <!-- Cockpit Canopy -->
+    <polygon points="256,120 242,155 256,175 270,155" fill="url(#cyanGlow)" filter="url(#glow)" />
+    <polygon points="256,125 246,152 256,168 266,152" fill="#FFFFFF" opacity="0.6" />
+
+    <!-- Hardpoint / Vent Lines -->
+    <line x1="256" y1="180" x2="256" y2="330" stroke="#00FFCC" stroke-width="1" opacity="0.4" />
+    <line x1="220" y1="260" x2="160" y2="320" stroke="#1A2332" stroke-width="2" />
+    <line x1="292" y1="260" x2="352" y2="320" stroke="#1A2332" stroke-width="2" />
+
+    <!-- Heat Radiator Vents -->
+    <line x1="240" y1="300" x2="272" y2="300" stroke="#FF5500" stroke-width="2" opacity="0.8" />
+    <line x1="242" y1="306" x2="270" y2="306" stroke="#FF5500" stroke-width="2" opacity="0.8" />
+    <line x1="244" y1="312" x2="268" y2="312" stroke="#FF5500" stroke-width="2" opacity="0.8" />
+  </g>
+</svg>

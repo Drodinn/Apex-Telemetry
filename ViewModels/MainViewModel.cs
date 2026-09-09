@@ -34,7 +34,7 @@ namespace ApexTelemetry.ViewModels
         private StatusModel? _latestStatus;
         private double _currentSpeed;
         private double _currentAltitude;
-        private string _statusMessage = "Telemetry System Active - Awaiting Status updates...";
+        private string _statusMessage = "Initializing Telemetry System...";
         private string _raceStatus = "NO ACTIVE RACE";
         private bool _isDebugExpanded;
 
@@ -135,7 +135,10 @@ namespace ApexTelemetry.ViewModels
                 CurrentAltitude = newStatus.Altitude.Value;
             }
 
-            StatusMessage = $"Status.json Updated: {newStatus.Timestamp:HH:mm:ss}";
+            StatusMessage = $"Status.json Loaded: {newStatus.Timestamp:HH:mm:ss}";
+
+            // Force WPF to refresh all bindings attached to child properties of LatestStatus
+            OnPropertyChanged(nameof(LatestStatus));
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;

@@ -37,6 +37,9 @@ namespace ApexTelemetry
                     ViewModel.CurrentSpeed = trace.SpeedMS;
                 });
             };
+
+            // Read status file immediately on launch before waiting for file watcher events
+            _telemetryService.ReadInitialStatus();
         }
     }
 }
