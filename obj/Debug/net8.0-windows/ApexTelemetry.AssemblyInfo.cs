@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApexTelemetry")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1304269652cf9ab61c874253efcdcfce70c0abd1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f85e9f23427a0bbed1bffe79f77ff5b071c0e670")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApexTelemetry")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApexTelemetry")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
